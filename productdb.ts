@@ -1,3 +1,13 @@
+/* We are going to represent our products in a map where the keys are strings representing the product's name and the values are numbers representing the product's price.
+
+Create an application which solves the following problems.
+How much is the fish?
+What is the most expensive product?
+What is the average price?
+How many products' price is below 300?
+Is there anything we can buy for exactly 125?
+What is the cheapest product? */
+
 'use strict';
 
 import { POINT_CONVERSION_COMPRESSED } from "constants";
@@ -56,11 +66,15 @@ function priceOf125() {                    //finding out if any item has price o
 priceOf125();
 
 
-/* function theCheapestItem() {                  //shows the cheapest item in list      FIND SOLUTION!!
-  prices.sort(function(b, a) {
-    return b-a;
-  });
-  return prices[prices.length];
-}
+let sorted: number[] = [];
+prices.forEach(function(element){
+  sorted.push(element);
+});
 
-console.log(products[prices.indexOf(theCheapestItem())]); */
+sorted.sort(function(a, b) {
+  return a-b;
+});
+
+console.log(products[prices.indexOf(sorted[sorted.length - 1])]);       //finds most expensive item
+
+console.log(products[prices.indexOf(sorted[0])]);                       //finds the cheapest item

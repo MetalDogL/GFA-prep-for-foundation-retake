@@ -1,3 +1,10 @@
+/* We are going to represent our contacts in a map where the keys are going to be strings and the values are going to be strings as well.
+
+Create an application which solves the following problems.
+What is John K. Miller's phone number?
+Whose phone number is 307-687-2982?
+Do we know Chris E. Myers' phone number? */
+
 'use strict';
 
 let phoneBook = {

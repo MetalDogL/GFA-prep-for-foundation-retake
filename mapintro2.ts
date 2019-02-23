@@ -1,3 +1,19 @@
+/* Create a map where the keys are strings and the values are strings with the following initial values
+
+Print all the key-value pairs in the following format
+
+Remove the key-value pair with value The Lab
+
+Add the following key-value pairs to the map
+
+Key	Value
+978-1-60309-450-4	They Called Us Enemy
+978-1-60309-453-5	Why Did We Trust Him?
+Print whether there is an associated value with key 478-0-61159-424-8 or not
+
+Print the value associated with key 978-1-60309-453-5 */
+
+
 'use strict';
 
 let phoneList: any  = {
