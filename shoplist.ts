@@ -9,3 +9,6 @@ let shopList = {
   chicken: 0
 }
 
+function showInfo: void ()
+let items = Object.keys(shopList); 
+

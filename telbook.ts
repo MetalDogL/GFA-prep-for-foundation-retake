@@ -8,7 +8,7 @@ let phoneBook = {
   'Brooke P. Askew': '307-687-2982'
 }
 
-function showInfo (infoFrom: Object) {
+function showInfo () {
 
 let names = Object.keys(phoneBook);                    //saving KEYS and VALUES into variables
 let phoneNumbers = Object.values(phoneBook);
@@ -18,4 +18,4 @@ console.log(names[phoneNumbers.indexOf('307-687-2982')]);  //finding out whose n
 console.log(phoneBook.hasOwnProperty('Chris E. Myers')); //finding out if we know Chris's phone number
 }
 
-showInfo(phoneBook);
+showInfo();
