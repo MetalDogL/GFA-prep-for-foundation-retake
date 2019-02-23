@@ -8,16 +8,14 @@ let phoneBook = {
   'Brooke P. Askew': '307-687-2982'
 }
 
+function showInfo (infoFrom: Object) {
+
 let names = Object.keys(phoneBook);                    //saving KEYS and VALUES into variables
 let phoneNumbers = Object.values(phoneBook);
 
 console.log(phoneBook['John K. Miller']);     //finding out JKM's phone number
+console.log(names[phoneNumbers.indexOf('307-687-2982')]);  //finding out whose number this is = SHOWS THE KEY OF THE VALUE
+console.log(phoneBook.hasOwnProperty('Chris E. Myers')); //finding out if we know Chris's phone number
+}
 
-const object1 = {
-  a: 'somestring',
-  b: 42,
-  c: false
-};
-
-console.log(Object.values(object1));
-// expected output: Array ["somestring", 42, false]
+showInfo(phoneBook);

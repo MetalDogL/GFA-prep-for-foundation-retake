@@ -1,3 +1,4 @@
+'use strict';
 
 var newMap: any = {
   97: 'a',
